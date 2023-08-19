@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devendra Portfolio</title>
+    <!-- <link rel="/projects.html"/> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 56);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(126, 126, 225);
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 23px;
+      }
+
+      .Left {
+        font-size: 1.5rem;
+      }
+
+      .leftSection {
+        width: 30%;
+        font-size: 3rem;
+      }
+
+      .button {
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .rightSection {
+        width: 30%;
+      }
+
+      .rightSection img {
+        width: 100%;
+        margin: -50px 0;
+      }
+
+      .purpule {
+        color: rgb(126, 55, 193);
+      }
+
+      .text-gry {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(126, 55, 193);
+      }
+
+      .seconndSecteion {
+        max-width: 80vw;
+        margin: auto;
+      }
+
+      main hr {
+        border: 0;
+        background-color: rgb(136, 63, 205);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      .projects {
+        margin: auto;
+        max-width: 80vw;
+        align-content: center;
+      }
+
+      .projects h1 {
+        font-size: 1.6rem;
+      }
+      .project-flex{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        justify-content: space-evenly;
+      }
+
+      .project-box {
+        width: calc(20% - 20px);
+        margin: 10px;
+        background-color: #c71585;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .project-box img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .project-box h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .project-box p {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .project-box a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .project-box:hover {
+        transform: scale(1.05);
+      }
+
+      .seconndSecteion h1 {
+        font-size: 1.6rem;
+      }
+
+      .seconndSecteion .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 26px;
+        align-items: center;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .seconndSecteion .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 120px;
+      }
+
+      .image_top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      footer {
+        background-color: #0c0e1a;
+        color: #fff;
+        padding: 20px 0;
+        margin-top: 675px;
+        /* height: 233px; */
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .container p {
+        margin: 0;
+      }
+
+      .social-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .social-links li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .social-links li:last-child {
+        margin-right: 0;
+        padding: 0%;
+        justify-content: center;
+      }
+
+      .social-links a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #0c0b0b;
+        color: #0c0b0b;
+        transition: background-color 0.3s ease;
+      }
+
+      .social-links a:hover {
+        background-color: #555;
+        color: #fff;
+      }
+      .share_link{
+        width: 23px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        body{
+          /* background-color: red; */
+          /* justify-content: center;
+          align-items: center; */
+          width: -webkit-fill-available;
+        }
+        .firstSection{
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+        }
+        .leftSection{
+          width: auto;
+          justify-content: center;
+          align-items: center;
+        }
+        .rightSection{
+          width: auto;
+          justify-content: center;
+        }
+        .box{
+          flex-direction: column;
+          width: 50vw;
+        }
+        .vertical-desc{
+          justify-content: start; 
+          height: max-content;
+          width: 214px;
+          margin-top: -29px;
+          padding: 10px;
+          left: 45px;
+        }
+        .seconndSecteion .vertical{
+          height: unset;
+          margin: 0 6vw;
+        }
+        .vertical-title {
+    position: relative;
+    top: 54px;
+    width: 200px;
+    left: 45px;
+}
+.seconndSecteion .box{
+  width: 50vw;
+}
+nav{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+/* main{
+  display: flex;
+  flex-direction: column;
+} */
+.project-flex{
+  flex-direction: column;
+  justify-content: center;
+}
+.project-box{
+      width: calc(20% - -172px);
+}
+footer{
+  display: none;
+}
+.firstSection{
+  flex-direction: column-reverse;
+}
+.leftSection{
+  width: 100% !important;
+  
+}
+.rightSection{
+  width: 410px !important;
+}
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="Left">Devendras Portfolio</div>
+        <div class="Right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About me</a></li>
+            <li><a href="/projects.html">Projects</a></li> 
+            <li><a href="/contact.html">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My Name is <span class="purpule">Devendra</span> & I am a
+          passionate <span id="element"></span>
+          <div><a class="button" href="/Devendra Bawanthade New Ats friendly.pdf" download="proposed_file_name" >Downlode CV</a>
+          <!-- <button class="button"></button> -->
+          <a href="https://www.linkedin.com/in/devendrabawanthade/"><button class="button">visit Linkedin</button></a>
+        </div>
+        </div>
+
+        <div class="rightSection">
+          <img src="dev.png" />
+        </div>
+      </section>
+      <hr />
+      <section class="projects">
+        <spam class="text-gry">Impressive Projects that I Had Done</spam>
+        <h1>My Previous Work</h1>
+        <div class="project-flex">
+          <div class="project-box">
+            <a href="#" target="_blank">
+              <img src="/onlineBazar.png" alt="Project 1" />
+              <h3>E-Commerce Website (onlineBazar.com)</h3>
+              <p>
+                A fully functional e-commerce platform offering a wide range of products, seamless user experience, and secure payment processing.
+              </p>
+            </a>
+          </div>
+
+          <div class="project-box">
+            <a href="#" target="_blank">
+              <img src="/WebinarLanding.png" alt="Project 2" />
+              <h3>Webinar Landing Page</h3>
+              <p>
+                A captivating and responsive landing page designed to attract attendees and showcase key details for your upcoming webinars.
+              </p>
+            </a>
+          </div>
+          <div class="project-box">
+            <a href="#" target="_blank">
+              <img src="/portfolio_proj.png" alt="Project 2" />
+              <h3>This Portfolio Website</h3>
+              <p>
+                A professional and visually appealing portfolio website to exhibit your skills, projects, and accomplishments in web development.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="project-flex">
+            <div class="project-box">
+              <a href="#" target="_blank">
+                <img src="/chatbot.png" alt="Project 1" />
+                <h3>Chatbot using OpenAI API (like ChatGPT)</h3>
+                <p>
+                    An AI-powered chatbot integrating the OpenAI API to provide interactive and natural language-based responses, enhancing user engagement.
+                </p>
+              </a>
+            </div>
+  
+            <div class="project-box">
+              <a href="#" target="_blank">
+                <img src="/movieloverss.png" alt="Project 2" />
+                <h3>Movieloverss (A blog Website)</h3>
+                <p>
+                  An engaging blog platform where movie enthusiasts can discover and share insights, reviews, and discussions about their favorite films.
+                </p>
+              </a>
+            </div>
+          </div>
+      </section>
+      <hr />
+      <section class="seconndSecteion">
+        <span class="text-gry">What I had Done So Far</span>
+        <h1>MY JOURNY</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image_top" src="web-developer.251x256.png" />
+            <div class="vertical-title">Schooling (2012-2020)</div>
+            <div class="vertical-desc">
+             I completed my schooling at Deepshikha Gurukul Sainik School Chikhaldara, where I had the opportunity to learn and grow in a disciplined and nurturing environment. During my school years, I actively participated in various extracurricular activities and developed a strong foundation in academics. also where I got 88% in 10th & 66% in 12th.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image_top" src="web-developer.251x256.png" />
+            <div class="vertical-title">College (2020-2024)</div>
+            <div class="vertical-desc">
+                For my higher education, I pursued my undergraduate studies at Mauli College of Engineering Shegaon. It was an enriching experience, and I specialized in [mention your field of study or major]. Throughout my college journey, I engaged in projects and internships, which allowed me to apply my theoretical knowledge into practical scenarios, enhancing my problem-solving and teamwork skills.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image_top" src="web-developer.251x256.png" />
+            <div class="vertical-title">Programing Languages</div>
+            <div class="vertical-desc">
+                <p>
+                    During my academic journey and beyond, I have acquired proficiency in several programming languages, including:
+                    <br>
+                    <ul>
+                      <li>C</li>
+                      <li>C++</li>
+                      <li>JAVA</li>
+                      <li>Python</li>
+                    </ul>
+                    <br>
+                    I have extensively worked with these languages on various projects, honing my skills in algorithm design, problem-solving, and software development. Each language has its unique strengths, and I enjoy leveraging them to build efficient and robust applications.
+                    <br>
+                    Additionally, I actively engage in continuous learning to stay updated with the latest advancements in the programming world and explore new technologies to expand my skill set further.
+                  </p>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image_top" src="web-developer.251x256.png" />
+            <div class="vertical-title">Web Developer</div>
+            <div class="vertical-desc">
+                <p>
+                    My fascination with web development led me to dive into the world of front-end technologies, where I learned the essential building blocks of the web:
+                    <br>
+                    <ul>
+                      <li>HTML: I gained a strong understanding of the structure and semantics of web pages, enabling me to create well-organized and accessible content.</li>
+                      <li>CSS: I explored the power of CSS to style and design web pages, making them visually appealing and responsive across different devices.</li>
+                      <li>JavaScript: I delved into the world of interactivity and dynamic web elements, learning how to manipulate the DOM and create engaging user experiences.</li>
+                    </ul>
+                    <br>
+                    During my learning journey, I worked on several hands-on projects, which allowed me to apply my knowledge effectively and further enhance my skills. I am enthusiastic about leveraging these skills to build user-friendly and visually appealing web applications, as well as continuously exploring new web technologies to stay at the forefront of the ever-evolving web development landscape.
+                  </p>
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image_top" src="web-developer.251x256.png" />
+            <div class="vertical-title">ReactJS</div>
+            <div class="vertical-desc">
+                <p>
+                    Currently, I am focused on building interactive and dynamic web applications using ReactJS, a powerful JavaScript library for front-end development. My ReactJS journey has allowed me to master the concepts of component-based architecture and state management.
+                    <br>
+                    I have successfully developed several ReactJS projects, demonstrating my ability to create reusable components, manage application state with React hooks, and integrate with external APIs to fetch and display data.
+                    <br>
+                    Exploring React's ecosystem, I've also become familiar with popular libraries and frameworks like Redux for advanced state management, React Router for handling navigation, and Material-UI for creating beautiful and responsive UIs.
+                    <br>
+                    I am passionate about building user interfaces that deliver a smooth and engaging user experience, and I continue to explore new features and best practices in the ReactJS world to enhance my development skills further.
+                  </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Devendra Bawanthade. All rights reserved.</p>
+        <ul class="social-links">
+         
+          <li>
+            <a href="https://www.linkedin.com/in/devendrabawanthade/" target="_blank"><i class="fab fa-linkedin">
+                <img class="share_link" src="/LinkedIn_logo.png" alt="">
+            </i></a>
+          </li>
+          <li>
+            <a href="https://github.com/DeveloperDeva" target="_blank"><i class="fab fa-linkedin">
+                <img class="share_link" src="/github_logo_icon_143772.png" alt="">
+            </i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/devendrasanjayrao/" target="_blank"><i class="fab fa-linkedin">
+                <img class="share_link" src="/insta_logo.png" alt="">
+            </i></a>
+          </li>
+          <li>
+            <a href="devendra01ug@gmail.com" target="_blank"><i class="fab fa-linkedin">
+                <img class="share_link" src="/logo-gmail-9951.png" alt="">
+            </i></a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Front End Development",
+          "Prompt Engineear",
+          "ENTC Engineear",
+          "Content Writer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
+<!-- devendra -->

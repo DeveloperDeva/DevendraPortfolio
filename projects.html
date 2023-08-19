@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      hr {
+        border: 0;
+        background-color: rgb(136, 63, 205);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .projects {
+        margin: auto;
+        max-width: 80vw;
+        align-content: center;
+      }
+
+      .projects h1 {
+        font-size: 1.6rem;
+      }
+      .project-flex{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        justify-content: space-evenly;
+      }
+
+      .project-box {
+        width: calc(20% - 20px);
+        margin: 10px;
+        background-color: #b6377e;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .project-box img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .project-box h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .project-box p {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .project-box a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .project-box:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <hr>
+    <section class="projects">
+        <spam class="text-gry">Impressive Projects that I Had Done</spam>
+        <h1>My Previous Work</h1>
+        <div class="project-flex">
+          <div class="project-box">
+            <a href="#" target="_blank">
+              <img src="/onlineBazar.png" alt="Project 1" />
+              <h3>E-Commerce Website (onlineBazar.com)</h3>
+              <p>
+                A fully functional e-commerce platform offering a wide range of products, seamless user experience, and secure payment processing.
+              </p>
+            </a>
+          </div>
+    
+          <div class="project-box">
+            <a href="#" target="_blank">
+              <img src="/WebinarLanding.png" alt="Project 2" />
+              <h3>Webinar Landing Page</h3>
+              <p>
+                A captivating and responsive landing page designed to attract attendees and showcase key details for your upcoming webinars.
+              </p>
+            </a>
+          </div>
+          <div class="project-box">
+            <a href="#" target="_blank">
+              <img src="/portfolio_proj.png" alt="Project 2" />
+              <h3>This Portfolio Website</h3>
+              <p>
+                A professional and visually appealing portfolio website to exhibit your skills, projects, and accomplishments in web development.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="project-flex">
+            <div class="project-box">
+              <a href="#" target="_blank">
+                <img src="/chatbot.png" alt="Project 1" />
+                <h3>Chatbot using OpenAI API (like ChatGPT)</h3>
+                <p>
+                    An AI-powered chatbot integrating the OpenAI API to provide interactive and natural language-based responses, enhancing user engagement.
+                </p>
+              </a>
+            </div>
+    
+            <div class="project-box">
+              <a href="#" target="_blank">
+                <img src="/movieloverss.png" alt="Project 2" />
+                <h3>Movieloverss (A blog Website)</h3>
+                <p>
+                  An engaging blog platform where movie enthusiasts can discover and share insights, reviews, and discussions about their favorite films.
+                </p>
+              </a>
+            </div>
+          </div>
+      </section>
+      <hr>
+</body>
+</html>
